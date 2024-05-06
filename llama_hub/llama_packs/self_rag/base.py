@@ -2,13 +2,13 @@ from dataclasses import dataclass
 from typing import Any, Dict, List
 import numpy as np
 
-from llama_index import Response
-from llama_index.llama_pack.base import BaseLlamaPack
-from llama_index.bridge.pydantic import Field
-from llama_index.query_engine import CustomQueryEngine
-from llama_index.core.base_retriever import BaseRetriever
-from llama_index.schema import NodeWithScore, TextNode
-from llama_index.utils import print_text
+from llama_index.core import Response
+from llama_index.core.llama_pack.base import BaseLlamaPack
+from llama_index.core.bridge.pydantic import Field
+from llama_index.core.query_engine import CustomQueryEngine
+from llama_index.core.retrievers import BaseRetriever
+from llama_index.core.schema import NodeWithScore, TextNode
+from llama_index.core.utils import print_text
 
 _IMPORT_ERROR_MSG = (
     "`llama_cpp` package not found, please run `pip install llama_cpp_python`"
